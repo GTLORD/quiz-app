@@ -1,0 +1,116 @@
+
+<h1 class="text-center">
+  Hacer quiz
+</h1>
+<hr>
+<h3>Para realizar:</h3>
+  <ol>
+    <li>Ingrese el nombre del reto</li>
+    <li>Ingresar el numero de preguntas que desea hacer</li>
+    <li>Ingresar las preguntas... mejor  </li>
+    <li>Ingresar las respuestas cada pregunta debe tener mínimo 2 respuestas</li>
+
+
+
+  </ol>
+
+<h3>ingrese numero de preguntas</h3>
+<input type="number" placeholder="numero de preguntas">
+<div class="row">
+  <div class="col">
+
+
+    <form [formGroup]="questionsForm" (ngSubmit)="onSave()"   autocomplete ="off">
+      <!-- campo pregunta -->
+      <div class="mb-3 row">
+        <label class="col-sm-3 col-form-label">Pregunta</label>
+        <div class="col-sm-9">
+          <input
+          type="text"
+          class="form-control"
+          formControlName="question"
+          placeholder="Ingrese la pregunta"
+          >
+          <span class="form-test teext-danger">
+          <!-- debe ingresar la pregunta -->
+          error message
+          </span>
+        </div>
+      </div>
+      <!-- campo respuesta 1 -->
+      <div class="mb-3 row">
+        <label class="col-sm-3 col-form-label">Respuesta 1</label>
+        <div class="col-sm-9">
+          <input
+          type="text"
+          class="form-control"
+          formControlName="ans1"
+          placeholder="Ingrese la Respuesta 1"
+          >
+          <span class="form-test teext-danger">
+          <!-- debe ingresar la pregunta -->
+          error message
+          </span>
+        </div>
+      </div>
+      <!-- campo respuesta 2-->
+      <div class="mb-3 row">
+        <label class="col-sm-3 col-form-label">Respuesta 2</label>
+        <div class="col-sm-9">
+          <input
+          type="text"
+          class="form-control"
+          formControlName="ans2"
+          placeholder="Ingrese la Respuesta 2"
+          >
+          <span class="form-test teext-danger">
+          <!-- debe ingresar la pregunta -->
+          error message
+          </span>
+        </div>
+      </div>
+      <!-- campo respuesta 3-->
+
+      <div class="mb-3 row">
+        <label class="col-sm-3 col-form-label">Respuesta 3</label>
+        <div class="col-sm-9">
+          <input
+          type="text"
+          class="form-control"
+          formControlName="ans3"
+          placeholder="Ingrese la Respuesta 3"
+          >
+          <span class="form-test teext-danger">
+          <!-- debe ingresar la pregunta -->
+          error message
+          </span>
+        </div>
+      </div>
+      <!-- campo respuesta 3-->
+
+      <div class="mb-3 row">
+        <label class="col-sm-3 col-form-label">Respuesta 4</label>
+        <div class="col-sm-9">
+          <input
+          type="text"
+          class="form-control"
+          formControlName="ans4"
+          placeholder="Ingrese la Respuesta 4"
+          >
+          <span class="form-test teext-danger">
+          <!-- debe ingresar la pregunta -->
+          error message
+          </span>
+        </div>
+      </div>
+
+<button
+  class="btn btn-danger"
+  type="submit"
+  > enviar </button>
+
+
+    </form>
+  </div>
+</div>
+
